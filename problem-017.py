@@ -48,8 +48,7 @@ for i in range (1, 1001):
       sum += len(tens[i])
       print tens[i]
     else:
-      temp_num = str(i)[:1]
-      temp_num += '0'
+      temp_num = str(i)[:1] + '0'
       sum += len(tens[int(temp_num)])
       print tens[int(temp_num)], ones[int(str(i)[-1:])]
       sum += len(ones[int(str(i)[-1:])])
@@ -73,8 +72,7 @@ for i in range (1, 1001):
       sum += len(teens[int(str(i)[-2:])])
       print 'and', teens[int(str(i)[-2:])] 
     elif i % 100 != 0:
-      temp_num = str(i)[1]
-      temp_num += '0'
+      temp_num = str(i)[1] + '0'
       sum += len('and')
       sum += len(tens[int(temp_num)])
       print 'and', tens[int(temp_num)], ones[int(str(i)[-1:])]
